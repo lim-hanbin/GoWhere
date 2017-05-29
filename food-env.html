@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HanBinGoWhere</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Boogaloo|Acme|Fjalla+One|Open+Sans|Marck+Script|Qwigley" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--=============================================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--=============================================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ==================== Brand ==================== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>HanBin<span>GoWhere</span></h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ==================== Collapsable Navigator ==================== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-cutlery"></span>
+                  <br class="hidden-xs">
+                  Food
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="food-env.html"><span class="glyphicon glyphicon-picture"></span>Environment</a></li>
+                  <li><a href="food-photo.html"><span class="glyphicon glyphicon-camera"></span>Deco/Pretty</a></li>
+                  <li><a href="food-taste.html"><span class="glyphicon glyphicon-cutlery"></span>Taste</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="sobre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <!--<span class="glyphicon glyphicon-tree-deciduous"></span>-->
+                  <span class="glyphicon glyphicon-tent"></span>
+                  <br class="hidden-xs">
+                  Outdoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="out-hike.html"><span class="glyphicon glyphicon-tree-conifer"></span>Hike/Stroll</a></li>
+                  <li><a href="out-active.html"><span class="glyphicon glyphicon-flash"></span>Active</a></li>
+                  <li><a href="out-hard.html"><span class="glyphicon glyphicon-fire"></span>Hardcore</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="horarios.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Indoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#in-active"><span class="glyphicon glyphicon-apple"></span>Active</a></li>
+                  <li><a href="#in-class"><span class="glyphicon glyphicon-book"></span>Classes</a></li>
+                  <li><a href="#food-cook"><span class="glyphicon glyphicon-baby-formula"></span>Cooking</a></li>
+                  <li><a href="#in-others"><span class="glyphicon glyphicon-pushpin"></span>Others</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="bleah.html">
+                  <span class="glyphicon glyphicon-thumbs-down"></span>
+                  <br class="hidden-xs">
+                  Bleah
+                </a>
+              </li>
+              
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--=============================================================================================================-->
+    <!-- BULK SECTION -->
+    <!--=============================================================================================================-->
+      
+    <div class="container" id="main-content">
+      <h2>Food (<span class="glyphicon glyphicon-picture"></span>Environment)</h2><!--<span class="glyphicon glyphicon-glass"></span>Scenic</h2>-->
+
+      <!-- SCENIC -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-picture"></span>Scenic</h3>
+      <div class="panel-group" id="food-env-scenic" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="spuds-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-scenic" href="#spuds" aria-controls="spuds" aria-expanded="true">
+                Hilltop @ Spuds &amp; Aprons
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="spuds" class="panel-collapse collapse" role="tabpanel" aria-labelledby="spuds-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>Hilltop, Sheltered Al Fresco</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Sunny day</td></tr>
+                <tr><td>Price:</td><td>~$30+/pax</td></tr>
+                <tr><td>Area:</td><td>South</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <span class="glyphicon glyphicon-heart-empty"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Плэcь тё пёп ц куыстиён. At night it is just dark, nothing to see.</td></tr>
+                <tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Southern Ridges/Hort Park</li>
+                  <li>Henderson Wave</li>
+                </ul></td></tr>
+              </table>
+              <img src="https://tabledb.s3.amazonaws.com/hgwlandingpage/promotion/5344d941e4b05d38c068069b/spuds2_20170203_9869.jpg">
+              <img src="http://d2jzxcrnybzkkt.cloudfront.net/uploads/2015/11/Table_and_View_jpg_1446609918.jpg?date=20170424">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8362142856067!2d103.81709131475394!3d1.271303299072758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1bdfdb433e15%3A0xe1155dc785b200cb!2sSpuds+%26+Aprons!5e0!3m2!1sen!2ssg!4v1494901594611" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="level33-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-scenic" href="#level33" aria-controls="level33" aria-expanded="true">
+                City view @ LeVel33
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="level33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="level33-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>City</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear night</td></tr>
+                <tr><td>Price:</td><td>>$60+/pax</td></tr>
+                <tr><td>Area:</td><td>Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Need to spend a bomb to sit on the balcony, but can request to go over to take pictures.</td></tr>
+              </table>
+              <img src="https://weekender.com.sg/entertainment/wp-content/uploads/2016/01/IMG_0335.jpg">
+              <img src="http://darrenbloggie.com/wp-content/uploads/2015/08/level33-panoramic-view.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8223743473723!2d103.85203231475391!3d1.280229999066241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ef68c8571aa333d!2sLeVeL33!5e0!3m2!1sen!2ssg!4v1494900282124" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="spize-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-scenic" href="#spize" aria-controls="spize" aria-expanded="true">
+                Forest view @ Spize Rifle Range
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="spize" class="panel-collapse collapse" role="tabpanel" aria-labelledby="spize-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Local food</td></tr>
+                <tr><td>Tags:</td><td>Forest, Air-con</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Sunny/Clear day</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Long walk in.</td></tr>
+                <tr><td>Go&nbsp;with:</td><td>
+                  <ul>
+                    <li>Bukit Timah Hill Hike</li>
+                    <li>Green Corridor Hike</li>
+                  </ul>
+                </td></tr>
+              </table>
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/b3/ce/38/view-from-the-restaurant.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.718341056395!2d103.7770844048538!3d1.345436799535023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da10f4a6d84a83%3A0xb634bc8d98bc27ae!2sSpize!5e0!3m2!1sen!2ssg!4v1494902820967" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-scenic-->
+
+      <!-- AMBIENCE -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-tree-deciduous"></span>Nature Ambience</h3>
+      <div class="panel-group" id="food-env-nature" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="grub-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-nature" href="#grub" aria-controls="grub" aria-expanded="true">
+                Park @ Grub
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="grub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="grub-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Western</td></tr>
+                <tr><td>Tags:</td><td>Park</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day, Clear night</td></tr>
+                <tr><td>Price:</td><td>~$20+/pax</td></tr>
+                <tr><td>Area:</td><td>Central</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Sidewalk Astronomy</li>
+                </ul></td></tr>
+              </table>
+              <img src="http://danielfooddiary.com/wp-content/uploads/2013/05/grub6.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.6861892359293!2d103.8336702!3d1.3649593!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16d865217d35%3A0x9f6b21d9869fd002!2sGRUB!5e0!3m2!1sen!2ssg!4v1494756360862" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="riders-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-nature" href="#riders" aria-controls="riders" aria-expanded="true">
+                Countryside @ Riders' Cafe
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="riders" class="panel-collapse collapse" role="tabpanel" aria-labelledby="riders-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Brunch</td></tr>
+                <tr><td>Tags:</td><td>Nature, Sheltered Al Fresco, Ambience</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Sunny/Clear day</td></tr>
+                <tr><td>Price:</td><td>~$30/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-question-sign"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>To go only when there is something else to do like perhaps horse riding. Not particularly worthwhile on its own.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://365days2play.com/photos/2013/11/Riders-Cafe-9.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.722214837031!2d103.79505301475396!3d1.34306549902045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1095a1f597d9%3A0x618d7debf5205ee2!2sRiders+Cafe!5e0!3m2!1sen!2ssg!4v1494951836494" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="tinhill-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-nature" href="#tinhill" aria-controls="tinhill" aria-expanded="true">
+                Garden @ Tin Hill Social
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="tinhill" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tinhill-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Western</td></tr>
+                <tr><td>Tags:</td><td>Evening, Early dinner, Ambience</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Cloudy day, Clear night</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Shuttle bus available from the main road.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Green Corridor Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://sethlui.com/wp-content/uploads/2015/11/tin-hill-social-5660.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8211.231781357907!2d103.7897537179149!3d1.3339232474576215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1098ff722f7d%3A0x320add39d6020655!2sTin+Hill+Social!5e0!3m2!1sen!2s!4v1494993254837" frameborder="0" allowfullscreen></iframe>
+              <img src="http://4.bp.blogspot.com/-__wAdhi4B4g/VkfhuxwhLUI/AAAAAAAAzyU/KLEcmdgpig4/s1600/IMG_8890.JPG">
+              <img src="http://i.hungrygowhere.com/business/0d/50/12/00/unnamed_800x0_crop_800x800_7b1b9fbfe2.jpg">
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-amb-->
+
+      <!-- INDOOR AMBIENCE -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-glass"></span>Indoor Ambience</h3>
+      <div class="panel-group" id="food-env-indoor" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="boufe-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-indoor" href="#boufe" aria-controls="boufe" aria-expanded="true">
+                Colonial @ Boufe Cafe
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="boufe" class="panel-collapse collapse" role="tabpanel" aria-labelledby="boufe-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Lunch, Local Food</td></tr>
+                <tr><td>Tags:</td><td>Colonial, White Theme</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear day</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>South</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Damn ulu.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                    <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://danielfooddiary.com/wp-content/uploads/2015/01/boufe2.jpg">
+              <img src="http://img.photobucket.com/albums/v405/attitudemi/Photo15-1-1510121pm1copy.jpg">
+              <img src="http://gninethree.com/wp-content/uploads/2015/01/photo-27.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.718341056395!2d103.7770844048538!3d1.345436799535023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da10f4a6d84a83%3A0xb634bc8d98bc27ae!2sSpize!5e0!3m2!1sen!2ssg!4v1494902820967" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="brava-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-indoor" href="#brava" aria-controls="brava" aria-expanded="true">
+                Old Europe @ Pasta Brava
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="brava" class="panel-collapse collapse" role="tabpanel" aria-labelledby="brava-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>Ambience</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>South</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Just order the pasta, the non-pasta dishes aren't recommended.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Green Corridor Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://i1135.photobucket.com/albums/m631/yumyumformytumtum/Pasta%20Brava/IMG_9118.jpg">
+              <img src="https://s3.burpple.com/venue_images/place_pastabrava_2-jpg_35_original?1373808277">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.826245941586!2d103.8426676015103!3d1.2777391194213932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da196d1b4e92d1%3A0xd5d9724f6838ca46!2sPasta+Brava!5e0!3m2!1sen!2ssg!4v1494994998396" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="senso-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-indoor" href="#senso" aria-controls="senso" aria-expanded="true">
+                Eur<span class="hidden-xs">opean</span> Courtyard @ Senso Ristorante
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="senso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="senso-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>Ambience</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Night and all weather</td></tr>
+                <tr><td>Price:</td><td>>$95/pax</td></tr>
+                <tr><td>Area:</td><td>Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-question-sign"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Bomb pricing with small plates. Only for the really special occasions. AMEX cards get discounts though.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Green Corridor Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://sg.asia-city.com/sites/default/files/imagecache/item_image/senso-courtyard_0.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.818809109911!2d103.84449551475402!3d1.2825194990645765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190ce46c5dc1%3A0x9068e4438b512a32!2sSenso!5e0!3m2!1sen!2ssg!4v1495215120425" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="paca-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-env-indoor" href="#paca" aria-controls="paca" aria-expanded="true">
+                Brunch @ Pacamara
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="paca" class="panel-collapse collapse" role="tabpanel" aria-labelledby="paca-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Brunch</td></tr>
+                <tr><td>Tags:</td><td>White Theme</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>Lower North</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="https://farm8.staticflickr.com/7534/16152668748_d01672af63_b.jpg">
+              <img src="http://danielfooddiary.com/wp-content/uploads/2014/11/pacamara3.jpg">
+              <img src="http://3.bp.blogspot.com/-WI7w7hBik5U/VOf90qPm1uI/AAAAAAAAN-g/3nKcmPXsT3A/s1600/6.JPG">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7084839183026!2d103.83317631475403!3d1.3514519990143343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da173a48a5339d%3A0x7f430aab886f4e65!2sPacamara+Boutique+Coffee+Roasters+Singapore!5e0!3m2!1sen!2ssg!4v1495352149673" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-amb-->
+
+    </div><!--/#main-content-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ==================== Footer Navbar ==================== -->
+        
+        <!-- ==================== Footer Copyright ==================== -->
+        <div id ="footer-copyright" class="text-center">
+          <!--Copyright &copy;--> HanBin<i>GoWhere</i> 2017
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HanBinGoWhere</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Boogaloo|Acme|Fjalla+One|Open+Sans|Marck+Script|Qwigley" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--=============================================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--=============================================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ==================== Brand ==================== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>HanBin<span>GoWhere</span></h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ==================== Collapsable Navigator ==================== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-cutlery"></span>
+                  <br class="hidden-xs">
+                  Food
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="food-env.html"><span class="glyphicon glyphicon-picture"></span>Environment</a></li>
+                  <li><a href="food-photo.html"><span class="glyphicon glyphicon-camera"></span>Deco/Pretty</a></li>
+                  <li><a href="food-taste.html"><span class="glyphicon glyphicon-cutlery"></span>Taste</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="sobre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <!--<span class="glyphicon glyphicon-tree-deciduous"></span>-->
+                  <span class="glyphicon glyphicon-tent"></span>
+                  <br class="hidden-xs">
+                  Outdoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="out-hike.html"><span class="glyphicon glyphicon-tree-conifer"></span>Hike/Stroll</a></li>
+                  <li><a href="out-active.html"><span class="glyphicon glyphicon-flash"></span>Active</a></li>
+                  <li><a href="out-hard.html"><span class="glyphicon glyphicon-fire"></span>Hardcore</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="horarios.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Indoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#in-active"><span class="glyphicon glyphicon-apple"></span>Active</a></li>
+                  <li><a href="#in-class"><span class="glyphicon glyphicon-book"></span>Classes</a></li>
+                  <li><a href="#food-cook"><span class="glyphicon glyphicon-baby-formula"></span>Cooking</a></li>
+                  <li><a href="#in-others"><span class="glyphicon glyphicon-pushpin"></span>Others</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="bleah.html">
+                  <span class="glyphicon glyphicon-thumbs-down"></span>
+                  <br class="hidden-xs">
+                  Bleah
+                </a>
+              </li>
+              
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--=============================================================================================================-->
+    <!-- BULK SECTION -->
+    <!--=============================================================================================================-->
+      
+    <div class="container" id="main-content">
+      <h2>Outdoors (<span class="glyphicon glyphicon-flash"></span>Active)</h2><!--<span class="glyphicon glyphicon-glass"></span>Scenic</h2>-->
+
+      <!-- CHILL -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-music"></span>Chill</h3>
+      <div class="panel-group" id="food-ph-chill" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="marina-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-chill" href="#marina" aria-controls="marina" aria-expanded="true">
+                Kite Flying &amp; Picnic @ Marina Barrage
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="marina" class="panel-collapse collapse" role="tabpanel" aria-labelledby="marina-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Outdoor</td></tr>
+                <tr><td>Tags:</td><td>Kite Flying, Picnic</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>Free</td></tr>
+                <tr><td>Area:</td><td>South</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li><a href="out-hike.html#botgard">Botanic Gardens</a></li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://4.bp.blogspot.com/-4k8kVVyhuw0/T50TdWa_FBI/AAAAAAAABew/vIejt6FiYQE/s1600/kite_13.jpg">
+              <img src="http://nowboarding.changiairport.com/content/dam/canowboarding/article-assets/live-local/8-best-picnic-spots-in-singapore-for-every-family-/GettyImages-129085503.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41682.82579709641!2d103.8493994808182!3d1.2770944380378424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd66daf2e5edc4d1!2sMarina+Barrage!5e0!3m2!1sen!2ssg!4v1495993232576" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="musical-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-chill" href="#musical" aria-controls="musical" aria-expanded="true">
+                Musical Picnic @ Botanic Gardens
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="musical" class="panel-collapse collapse" role="tabpanel" aria-labelledby="musical-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Outdoor</td></tr>
+                <tr><td>Tags:</td><td>Concert, Picnic</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>Free</td></tr>
+                <tr><td>Area:</td><td>Home stretch</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <tr><td>Go&nbsp;with:</td><td><ul>
+                  <li><a href="out-hike.html#botgard">Botanic Gardens</a></li>
+                </ul></td></tr>
+              </table>
+              <img src="http://comesingapore.com/pic/load/1354">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.769397387025!2d103.81372491475392!3d1.3138396990417476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6cbae76c8f1ac6fc!2sShaw+Foundation+Symphony+Stage!5e0!3m2!1sen!2ssg!4v1495992935706" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-ph-deco-->
+
+      <!-- STROLLS -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-star-empty"></span>Tiring/Sweaty</h3>
+      <div class="panel-group" id="food-ph-deco" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="baseball-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-deco" href="#baseball" aria-controls="baseball" aria-expanded="true">
+                Homerun Baseball
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="baseball" class="panel-collapse collapse" role="tabpanel" aria-labelledby="baseball-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Indoor</td></tr>
+                <tr><td>Tags:</td><td>Open Air, Short</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>$20-40/pax</td></tr>
+                <tr><td>Area:</td><td>West</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>
+                  Tiring. 
+                  Shorts will do.
+                </td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li><a href="#hort">Hort Park</a></li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://teambonding.com.sg/wp-content/uploads/2015/02/indoor-baseball6.jpg">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/03/44/fd/homerun-baseball.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7576745610945!2d103.744679814754!3d1.3211613990364135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1aa38b4163f7%3A0x2fcc3d1662c5a1f2!2sHomerun+Baseball!5e0!3m2!1sen!2ssg!4v1495985078910" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="kart-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-deco" href="#kart" aria-controls="kart" aria-expanded="true">
+                Go-kart Racing @ K1F
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="kart" class="panel-collapse collapse" role="tabpanel" aria-labelledby="kart-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Outdoor</td></tr>
+                <tr><td>Tags:</td><td>Race, Short</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>$35+$5/10min/pax</td></tr>
+                <tr><td>Area:</td><td>North</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-question-sign"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>
+                  Rather short at 10mins long. 
+                  Bring sunscreen. 
+                  Bring driver's license for 'advanced' option.
+                </td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li><a href="#south">Southern Ridges</a></li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://kf1karting.com/wp-content/uploads/2014/04/kf1homebanner2.png">
+              <img src="http://kf1karting.com/wp-content/uploads/2016/01/6.jpg">
+              <img src="http://kf1karting.com/wp-content/uploads/2014/03/funkartratesmonday-1024x724.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5876347406274!2d103.75665731475411!3d1.4231339989620986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1246d9e3febf%3A0xf906e47caa950743!2sKF1+Karting+Circuit!5e0!3m2!1sen!2ssg!4v1495985594078" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="coney-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-deco" href="#coney" aria-controls="coney" aria-expanded="true">
+                Cycling @ Coney Island
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="coney" class="panel-collapse collapse" role="tabpanel" aria-labelledby="coney-head">
+            <div class="panel-body">
+              <table>
+                <p>Coney Island | 
+                Lorong Halus Bridge</p>
+                <tr><td>Type:</td><td>Outdoor</td></tr>
+                <tr><td>Tags:</td><td>Dirt Track, Photos</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>North East</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>
+                  Takes 2-4 hours, the island closes at 7pm.
+                  Bike shops are at Punggol Settlement (toilet there too) and at 'Go Cycling' shop near the main Punggol End road. 
+                  Beaches are full of sandflies. 
+                </td></tr>
+                <tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Punggol Waterway Park</li>
+                  <li>Hai Bin Punggol Fishing</li>
+                  <li>Whisk &amp; Paddle Cafe</li>
+                </ul></td></tr>
+              </table>
+              <img src="http://thesmartlocal.com/images/easyblog_articles/2547/b2ap3_medium_Coney-Island-5-2.jpg">
+              <img src="http://thesmartlocal.com/images/easyblog_articles/2547/630x572xb2ap3_medium_punggol-ma_20151111-064221_1.jpg.pagespeed.ic.bBwxZr8-Sq.webp">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.44549659878!2d103.9143931767134!3d1.4093406335541918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3e04df83ff99%3A0x768eaa64e9c2d3b4!2sSerangoon+Island!5e0!3m2!1sen!2ssg!4v1495986710058" frameborder="0" allowfullscreen></iframe>
+              <img src="http://thesmartlocal.com/images/easyblog_images/2386/xb2ap3_thumbnail_image03_20150604-093227_1.jpg.pagespeed.ic.SqH-p21LOf.webp">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.487727617883!2d103.91319154707476!3d1.4031626852343984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x29407b7805dd108c!2sLorong+Halus+Bridge!5e0!3m2!1sen!2ssg!4v1495986774244" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="ubin-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-deco" href="#ubin" aria-controls="ubin" aria-expanded="true">
+                Cycling @ Pulau Ubin
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="ubin" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ubin-head">
+            <div class="panel-body">
+              <table>
+                <p>Pulau Ubin | 
+                Pekan Quarry | 
+                Check Jawa | 
+                House No. 1</p>
+                <tr><td>Type:</td><td>Outdoor</td></tr>
+                <tr><td>Tags:</td><td>Asphalt Track, Photos, Exploring</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>Extreme East</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>One day event.</td></tr>
+                <tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Ubin Seafood on mainland</li>
+                </ul></td></tr>
+              </table>
+              <img src="http://singapore.swea.org/wp-content/uploads/sites/81/2016/01/cycling-around-pulau-ubin-photo_2224258-fit468x296.jpg">
+              <img src="https://www.parkroyalhotels.com/content/dam/pr/PR%20Pickering/destination/parkroyal_picks/untouched-pockets-of-nature-in-singapore/N-Pulau-ubin-quarry_940X625.jpg">
+              <img src="http://thesmartlocal.com/images/easyblog_images/2304/Pulau-Ubin-39.JPG">
+              <!--<img src="http://1.bp.blogspot.com/-9Dc__5G2P3I/UoxAUXE6FxI/AAAAAAABEkU/zcZ9mVzd_B8/s1600/masterplan2.JPG">-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12571.94322228025!2d103.96224476080211!3d1.410785762476245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba127ef3e4b4a95d!2sPulau+Ubin!5e0!3m2!1sen!2ssg!4v1495988974775" frameborder="0" allowfullscreen></iframe>
+              <img src="https://tour.dulichvietnam.com.vn/uploads/image/Du-lich-Singapore/pulau-ubin/ChekJawa-2.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5098.435106294173!2d103.98635850215199!3d1.407513409394207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7271b320b5190944!2sChek+Jawa+Wetlands!5e0!3m2!1sen!2ssg!4v1495989017795" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="sandcastle-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-ph-deco" href="#sandcastle" aria-controls="sandcastle" aria-expanded="true">
+                Sandcastle Building @ East Coast Park
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="sandcastle" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sandcastle-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Outdoor</td></tr>
+                <tr><td>Tags:</td><td>Beach, Class</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear/Cloudy day</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>South East</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Need to shower after it.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Ubin Seafood on mainland</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://footage.framepool.com/shotimg/qf/792134591-sand-castle-sentosa-island-beach-holidays-building-constructing.jpg">
+              <img src="http://www.streetdirectory.com/stock_images/travel/simg_show/12416825470854/1/castle_beach_east_coast_park/">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14951.301305370267!2d103.91811814148335!3d1.3044512338354997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x685d7e3c37bd5933!2sCastle+Beach!5e0!3m2!1sen!2ssg!4v1495990945674" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-ph-deco-->
+    </div><!--/#main-content-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ==================== Footer Navbar ==================== -->
+        
+        <!-- ==================== Footer Copyright ==================== -->
+        <div id ="footer-copyright" class="text-center">
+          <!--Copyright &copy;--> HanBin<i>GoWhere</i> 2017
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>
