@@ -1,0 +1,435 @@
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Open+Sans", sans-serif;
+}
+/*h3 {
+  font-family: "Hammersmith One", cursive;
+  font-size: 3em;
+  /*border-bottom: 1px solid #000; */
+/*}
+h3 span {
+ font-size: 0.8em;
+ padding-right: 8px;
+ padding-top: 8px;
+}
+
+/*=====================================================================================|
+|************************************** 1. HEADER *************************************|
+|======================================================================================|*/
+#header-nav {
+  background-color: #003399;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 10px #003399;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+.navbar-brand h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: 'Qwigley', cursive;
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: .75;
+  color: #fff;
+  text-shadow: 1px 1px 1px #222;
+  text-shadow: 1px 1px #ff0066;
+  text-shadow: 1px 1px #cc0066;
+  text-shadow: 1px 1.5px 1px #ff66d9;
+}
+.navbar-brand h1 span {
+  color: #ff66d9;
+  text-shadow: 1px 1px #cc0066;
+  text-shadow: 0.5px 0.5px #fff;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+/* END Header */
+
+/************************************* 1.1 Navbar **************************************
+========================================================================================*/
+#nav-list {
+  margin-top: 8px;
+}
+#nav-list > li > a {
+  color: #fff;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+  color: #000;
+}
+#nav-list a span { /* Glyphs */
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+#collapsable-nav a { /* Collapsed nav menu glyphs and words */
+  font-size: 1.3em;
+}
+#collapsable-nav a span { /* Collapsed nav glyphs */
+  font-size: 1.2em; /* To override 1.8em sizing of larger screen sizes */
+  margin-right: 5px;
+}
+/* END Navbar */
+
+/*=====================================================================================|
+|********************************** 2. MAIN-CONTENT ***********************************|
+|======================================================================================|*/
+#main-content {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+#main-content h2 {
+  font-size: 3.5em;
+  text-align: center;
+  font-family: "Hammersmith One", sans-serif;
+}
+#main-content h2 > span {
+ font-size: 0.8em;
+ padding: 0 7px;
+}
+.jumbotron {
+  background-color: #fff;
+  height: 100vh;
+  padding: 20px;
+  margin: 0;
+}
+.jumbotron p {
+  margin: 10px;
+  font-size: 1.5em;
+  font-family: "Marck Script";
+  text-align: center;
+}
+/* END Main-content */
+
+/*********************************** 2.1 Panel *************************************
+========================================================================================*/
+h4.panel-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.panel-body {
+  font-family: "Open+Sans", sans-serif;
+  font-size: 1.5em;
+  /*padding-bottom: 80px;*/
+}
+.panel-body table {
+  float: left;
+  width: 45%;
+}
+.panel-body td:first-child { /* first column */
+  font-weight: bold;
+  text-align: right;
+  vertical-align: text-top;
+}
+.panel-body td:first-child + td { /* second column */ 
+  padding-left: 12px;
+  font-family: "Marck Script";
+  font-size: 1.12em;
+}
+.panel-body img {
+  float: left;
+  height: 320px;
+  padding: 10px;
+}
+.panel-body iframe {
+  float: left;
+  width: 320px; 
+  height: 320px;
+  border: 0;
+  padding: 10px;
+}
+/* END Review */
+
+/************************************* 2.2 Footer **************************************
+========================================================================================*/
+.panel-footer {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  color: #fff;
+}
+/* END Footer */
+
+/*********************************** 2.3 Page-navbar *************************************
+========================================================================================*/
+#page-navbar {
+  margin: auto 20px;
+}
+#page-navbar li.cat{
+  border-left: 1px solid #231231;
+  font-size: 200%;
+}
+#page-navbar span{
+  color: #3F0C1F;
+  font-weight: bold;
+}
+#page-navbar li a {
+  /*border: 1px solid #231231;*/
+  color: #3F0C1F;
+  text-align: center;
+  padding: 5px 10px;
+  /*font-style: italic;*/
+}
+#page-navbar .active a {
+  background-color: #660000;
+  color: #f2f2f2;
+}
+/* END Page-navbar */
+
+/*=====================================================================================|
+|******************************* 3. SIZE DEPENDENT STYLES *****************************|
+|======================================================================================|*/
+
+/***************************** 3.1 Large devices only **********************************
+========================================================================================*/
+@media (min-width: 1200px) {
+}
+
+/***************************** 3.2 Medium devices only *********************************
+========================================================================================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header-nav {
+    font-size: 80%;
+  }
+  .navbar-brand h1 {
+    font-size: 2.8em;
+  }
+  #main-content h2 {
+    font-size: 3em;
+  }
+  #main-content h3 {
+    font-size: 1.9em;
+  }
+  .panel-heading {
+    padding: 6px 10px;
+  }
+  h4.panel-title {
+    font-size: 1.3em;
+  }
+  .panel-body {
+    font-size: 1.2em;
+  }
+  .panel-body td:first-child + td { /* second column */ 
+    padding-left: 8px;
+    font-size: 1.3em;
+  }
+  .panel-body img {
+    height: 280px;
+    padding: 5px;
+  }
+  .panel-body iframe {
+    width: 280px; 
+    height: 280px;
+    padding: 5px;
+  }
+}
+
+/***************************** 3.3 Small devices only **********************************
+========================================================================================*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-nav {
+    font-size: 70%;
+  }
+  .navbar-brand h1 {
+    font-size: 2.1em;
+    margin-top: 7px;
+  }
+  #main-content h2 {
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  #main-content h3 {
+    font-size: 1.7em;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  #nav-list {
+    margin-top: 3px;
+  }
+  #nav-list > li > a {
+    padding: 10px;
+  }
+  .panel-heading {
+    padding: 4px 6px;
+  }
+  h4.panel-title {
+    font-size: 1.25em;
+    font-weight: normal;
+  }
+  .panel-heading {
+    padding: 5px 8px;
+  }
+  .panel-body {
+    font-size: 1.2em;
+  }
+  /*.panel-body table {
+    width: 45%;
+  }*/
+  /*.panel-body td:first-child + td { /* second column */ 
+    /*padding-left: 5px;
+    font-size: 1em;
+  }*/
+  .panel-body img {
+    height: 230px;
+    padding: 5px;
+  }
+  .panel-body iframe {
+    width: 230px; 
+    height: 230px;
+    padding: 5px;
+  }
+}
+
+/************************** 3.4 Extra-small devices only *******************************
+========================================================================================*/
+@media (max-width: 767px) {
+  
+  /** Header *****************************************************/
+  #header-nav {
+    /*font-size: 50%;*/
+  }
+  .navbar-brand h1 {
+    font-size: 1.8em;
+    margin-top: 3px;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #fff;
+    /*color: #fff;*/
+  }
+  .navbar-header button.navbar-toggle {
+    /*clear: both;*/
+    margin-top: -40px;
+  }
+  #main-content {
+    padding-top: 60px;
+  }
+  #main-content h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  #main-content h3 {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+  /*#nav-list {
+    margin-top: 3px;
+  }
+  #nav-list > li > a {
+    padding: 10px;
+  }*/
+  h4.panel-title {
+    font-size: 1.15em;
+    font-weight: normal;
+  }
+  .panel-heading {
+    padding: 3px 6px;
+  }
+  .panel-body {
+    font-size: 1.2em;
+  }
+  .panel-body table {
+    width: 50%;
+  }
+  /*.panel-body td:first-child + td { /* second column */ 
+    /*padding-left: 5px;
+    font-size: 1em;
+  }*/
+  .panel-body img {
+    height: 200px;
+    padding: 5px;
+  }
+  .panel-body iframe {
+    width: 200px; 
+    height: 200px;
+    padding: 3px;
+  }
+  /* END Footer */
+}
+
+/********************* 3.4 Super-small devices only (like iPhone 4) ********************
+========================================================================================*/
+@media (max-width: 479px) {
+
+  #main-content {
+    padding-top: 50px;
+  }
+  #header-nav {
+    /*font-size: 50%;*/
+  }
+  .navbar-brand h1 {
+    font-size: 2em;
+    margin-top: 2px;
+  }
+  /*.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #fff;
+    /*color: #fff;
+  }
+  .navbar-header button.navbar-toggle {
+    /*clear: both;*/
+  /*  margin-top: -40px;
+  }
+  #main-content {
+    padding-top: 60px;
+  }
+    margin-top: 8px;
+    margin-bottom: 5px;
+  */
+  #main-content 
+  h2 {
+    font-size: 1.8em;
+  }
+  /*
+  h3 {
+    /*font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+  */
+  /*#nav-list {
+    margin-top: 3px;
+  }
+  #nav-list > li > a {
+    padding: 10px;
+  }
+  h4.panel-title {
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+  .panel-heading {
+    padding: 4px 6px;
+  }*/
+  .panel-body {
+    font-size: 1.1em;
+  }
+  .panel-body table {
+    width: 100%;
+  }
+  /*.panel-body td:first-child + td { /* second column */ 
+    /*padding-left: 5px;
+    font-size: 1em;
+  }*/
+  .panel-body img {
+    width: 80vw;
+    padding: 2px;
+  }
+  .panel-body iframe {
+    width: 200px; 
+    height: 200px;
+    padding: 3px;
+  }
+
+}

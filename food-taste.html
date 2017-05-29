@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HanBinGoWhere</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Boogaloo|Acme|Fjalla+One|Open+Sans|Marck+Script|Qwigley" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--=============================================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--=============================================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ==================== Brand ==================== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>HanBin<span>GoWhere</span></h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ==================== Collapsable Navigator ==================== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-cutlery"></span>
+                  <br class="hidden-xs">
+                  Food
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="food-env.html"><span class="glyphicon glyphicon-picture"></span>Environment</a></li>
+                  <li><a href="food-photo.html"><span class="glyphicon glyphicon-camera"></span>Deco/Pretty</a></li>
+                  <li><a href="food-taste.html"><span class="glyphicon glyphicon-cutlery"></span>Taste</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="sobre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <!--<span class="glyphicon glyphicon-tree-deciduous"></span>-->
+                  <span class="glyphicon glyphicon-tent"></span>
+                  <br class="hidden-xs">
+                  Outdoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="out-hike.html"><span class="glyphicon glyphicon-tree-conifer"></span>Hike/Stroll</a></li>
+                  <li><a href="out-active.html"><span class="glyphicon glyphicon-flash"></span>Active</a></li>
+                  <li><a href="out-hard.html"><span class="glyphicon glyphicon-fire"></span>Hardcore</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="horarios.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Indoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#in-active"><span class="glyphicon glyphicon-apple"></span>Active</a></li>
+                  <li><a href="#in-class"><span class="glyphicon glyphicon-book"></span>Classes</a></li>
+                  <li><a href="#food-cook"><span class="glyphicon glyphicon-baby-formula"></span>Cooking</a></li>
+                  <li><a href="#in-others"><span class="glyphicon glyphicon-pushpin"></span>Others</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="bleah.html">
+                  <span class="glyphicon glyphicon-thumbs-down"></span>
+                  <br class="hidden-xs">
+                  Bleah
+                </a>
+              </li>
+              
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--=============================================================================================================-->
+    <!-- BULK SECTION -->
+    <!--=============================================================================================================-->
+      
+    <div class="container" id="main-content">
+      <h2>Food (<span class="glyphicon glyphicon-cutlery"></span>Taste)</h2><!--<span class="glyphicon glyphicon-glass"></span>Scenic</h2>-->
+
+      <!-- REGIONAL CUISINE -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-globe"></span>Regional Cuisine</h3>
+      <div class="panel-group" id="food-cuisine" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="okinawan-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#okinawan" aria-controls="okinawan" aria-expanded="true">
+                Okinawan @ Nirai Kanai
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="okinawan" class="panel-collapse collapse" role="tabpanel" aria-labelledby="okinawan-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>-</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="https://lh4.googleusercontent.com/-HLwCbirn33s/UEOKX-ZVloI/AAAAAAAALOw/fzZbLxPoDYU/s800/DSCF0932.JPG">
+              <img src="https://farm9.staticflickr.com/8154/7609866404_8098101548_z.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8043948351856!2d103.84238531475394!3d1.2917345990578581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199f7fbe644b%3A0xe767630b1b609e5c!2sOkinawan+Diner+Nirai-Kanai!5e0!3m2!1sen!2ssg!4v1495154124761" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="italian-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#italian" aria-controls="italian" aria-expanded="true">
+                Italian @ iO Osteria
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="italian" class="panel-collapse collapse" role="tabpanel" aria-labelledby="italian-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>Authentic</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>~$25/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <span class="glyphicon glyphicon-heart-empty"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Not the typical pasta and pizza Italian place. Recommended to have the Traditional Roman Schiacciata ($18) and the Porchetta Baked Pork Belly Wild Fennel.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://sethlui.com/wp-content/uploads/2016/10/IO-16.jpg">
+              <img src="http://sethlui.com/wp-content/uploads/2016/10/IO-9.jpg">
+              <img src="http://sethlui.com/wp-content/uploads/2016/10/IO-15.jpg">
+              <img src="http://sethlui.com/wp-content/uploads/2016/10/IO-20.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6894353408143!2d103.76229921452075!3d1.3630009619133037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1053aa50898d%3A0xc66016df53793535!2sIO+Italian+Osteria!5e0!3m2!1sen!2ssg!4v1495156795592" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="spanish-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#spanish" aria-controls="spanish" aria-expanded="true">
+                Spanish @ My Little Spanish Place
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="spanish" class="panel-collapse collapse" role="tabpanel" aria-labelledby="spanish-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>Tapas, Paella</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>>$40/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch, Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Recommended to try the champiñones al horno.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://www.mylittlespanishplace.com.sg/wp-content/uploads/2015/10/paella-de-la-casa_crop3.jpg">
+              <img src="http://sethlui.com/wp-content/uploads/2015/07/My-Little-Spanish-Place-5.jpg">
+              <img src="http://d2jzxcrnybzkkt.cloudfront.net/uploads/2013/08/mslp_interior_jpg_1376993553.jpg?date=20170424">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.752321003563!2d103.80712471475407!3d1.3244915990339887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a087d300b7f%3A0xbddf80318d12bff8!2sMy+Little+Spanish+Place+(Bukit+Timah)!5e0!3m2!1sen!2ssg!4v1495212946586" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.811482201015!2d103.84714221452089!3d1.2872118621326243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190a37a6e25f%3A0xf278d7be38c834d1!2sMy+Little+Spanish+Place+(Boat+Quay)!5e0!3m2!1sen!2ssg!4v1495212999191" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="mideast-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#mideast" aria-controls="mideast" aria-expanded="true">
+                Middle Eastern @ Artichoke
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="mideast" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mideast-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td></td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>>$30/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch, Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign">-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Make reservations! Portions are small. Recommended to try the Babaganoush and the Slow-Roasted Lamb Shoulder (The Lambgasm).</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://www.singaporefoodie.com/wp-content/uploads/2013/06/artichoke-mezze1.jpg">
+              <img src="http://www.oubruncher.com/photos1/1480_1.jpg">
+              <img src="https://2.bp.blogspot.com/-qZjCKCggNNE/VyYOAw-E4XI/AAAAAAAAf1U/6TPhR53bYyYgZ3yr3FEDsJvwzfTPkri2ACLcB/s640/1%2BIMG_8834.jpg">
+              <img src="https://jackisnotdull.files.wordpress.com/2011/02/restaurant-food.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.79156819322!2d103.84984221475395!3d1.2998797990519224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19bb14aa3acd%3A0xb93393ff7723e838!2sArtichoke!5e0!3m2!1sen!2ssg!4v1495214386996" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="persian-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#persian" aria-controls="persian" aria-expanded="true">
+                Persian @ Shabestan
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="persian" class="panel-collapse collapse" role="tabpanel" aria-labelledby="persian-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Dinner</td></tr>
+                <tr><td>Tags:</td><td>Quayside, Live Performance</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Clear night</td></tr>
+                <tr><td>Price:</td><td>~$40/pax</td></tr>
+                <tr><td>Area:</td><td>Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign">-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Have a belly dancer on Friday evenings at 8pm.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://www.worldfranchisecentre.com/picture/shabestan-franchise-9.jpg">
+              <img src="http://4.bp.blogspot.com/-3REyAXLb8qc/U_s-8QymaII/AAAAAAAACvo/EXE3eX9p83A/s1600/IMG_0662.JPG">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.80541683139!2d103.8384940147539!3d1.2910833990583286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199ef1891b27%3A0x50b7fbad9ac2eae1!2sShabestan!5e0!3m2!1sen!2ssg!4v1495441098951" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-cuisine-->
+
+      <!-- REGIONAL CUISINE -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-cutlery"></span>Good Flavour</h3>
+      <div class="panel-group" id="food-cuisine" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="duck-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#duck" aria-controls="duck" aria-expanded="true">
+                Duck Pizza @ The Tea Party Café
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="duck" class="panel-collapse collapse" role="tabpanel" aria-labelledby="duck-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Lunch/Dinner</td></tr>
+                <tr><td>Tags:</td><td>Duck pizza</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>
+                <tr><td>Price:</td><td>???/pax</td></tr>
+                <tr><td>Area:</td><td>Home stretch</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://danielfooddiary.com/wp-content/uploads/2012/07/teapartycafe2.jpg">
+              <img src="http://drinksomewhere.com/assets/images/outlet/gallery/2014/06/teaparty_biopolis.jpg">
+              <img src="https://s3.burpple.com/foods/1c299c04cda1e4a0b92792244_original.?1377275260">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.741100457351!2d103.79281431452077!3d1.3314443620057759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da109ed3329001%3A0xd083e974db87a298!2sThe+Tea+Party+Cafe!5e0!3m2!1sen!2ssg!4v1495045533008" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="fynn-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#fynn" aria-controls="fynn" aria-expanded="true">
+                Mediterranean @ Fynn's
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="fynn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="fynn-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Brunch</td></tr>
+                <tr><td>Tags:</td><td>-</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>Good weather and all times</td></tr>
+                <tr><td>Price:</td><td>~$20/pax</td></tr>
+                <tr><td>Area:</td><td>South</td></tr>
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign">-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Must reserve.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://www.thefinder.com.sg/sites/default/files/fynn%27s%20seared%20salmon%20fillet%2C%20new%20restaurant%20in%202017.jpg">
+              <img src="http://www.ladyironchef.com/wp-content/uploads/2016/12/Chicken-Wild-Rice.jpg">
+              <img src="http://sg.asia-city.com/sites/default/files/imagecache/item_image/fynns_-_interiors_2_0.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.800524102889!2d103.85326101475388!3d1.2941979990560646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a5ee67caa3%3A0x3eebc04e5935e67e!2sFynn&#39;s!5e0!3m2!1sen!2ssg!4v1495298243573" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="poke-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#poke" aria-controls="poke" aria-expanded="true">
+                Poké Bowl @ Alpha Poké
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="poke" class="panel-collapse collapse" role="tabpanel" aria-labelledby="poke-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Brunch</td></tr>
+                <tr><td>Tags:</td><td>-</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times.</td></tr>
+                <tr><td>Price:</td><td>~$25/pax</td></tr>
+                <tr><td>Area:</td><td>South</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Very slow service, until forgot to collect back the card used for payment.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://danielfooddiary.com/wp-content/uploads/2015/12/alohapoke9.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8208789534206!2d103.84498321475392!3d1.2811907990655396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190d0c27a50b%3A0x7053e71173b0d819!2sAloha+Poke!5e0!3m2!1sen!2ssg!4v1495349863394" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="rollie-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#food-cuisine" href="#rollie" aria-controls="rollie" aria-expanded="true">
+                Specialty Sushi @ Rollie Ollie
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="rollie" class="panel-collapse collapse" role="tabpanel" aria-labelledby="rollie-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Lunch/Dinner</td></tr>
+                <tr><td>Tags:</td><td>Fusion</td></tr>
+                <tr><td>Good&nbsp;on:</td><td>All weather and times.</td></tr>
+                <tr><td>Price:</td><td>~$15/pax</td></tr>
+                <tr><td>Area:</td><td>West, Town</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <span class="glyphicon glyphicon-heart-empty"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://danielfooddiary.com/wp-content/uploads/2015/06/rollieolie4.jpg">
+              <img src="http://www.straitstimes.com/sites/default/files/st_20151004_roll_rollieolli_1730082.jpg">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510548.93846733985!2d103.49853785193852!3d1.3785209819727762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a42eafab277%3A0x2764bd83c1a2f51a!2sRollie+Olie!5e0!3m2!1sen!2ssg!4v1495350995353" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7107.232681768751!2d103.85507239039387!3d1.2951428929834328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19af06781c77%3A0xb712161835bb4fbc!2sRollie+Olie!5e0!3m2!1sen!2ssg!4v1495350971016" frameborder="0" allowfullscreen></iframe>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#food-cuisine-->
+
+    </div><!--/#main-content-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ==================== Footer Navbar ==================== -->
+        
+        <!-- ==================== Footer Copyright ==================== -->
+        <div id ="footer-copyright" class="text-center">
+          <!--Copyright &copy;--> HanBin<i>GoWhere</i> 2017
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>
