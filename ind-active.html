@@ -50,17 +50,18 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
             <ul id="nav-list" class="nav navbar-nav navbar-right">
 
-              <li class="dropdown">
+              <li class="dropdown divider">
                 <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <span class="glyphicon glyphicon-cutlery"></span>
                   <br class="hidden-xs">
                   Food
                   <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a href="food-env.html"><span class="glyphicon glyphicon-picture"></span>Environment</a></li>
-                  <li><a href="food-photo.html"><span class="glyphicon glyphicon-camera"></span>Deco/Pretty</a></li>
-                  <li><a href="food-taste.html"><span class="glyphicon glyphicon-cutlery"></span>Taste</a></li>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="food-env.html"><span class="glyphicon glyphicon-picture"></span>Environment</a></li>
+                  <li role="presentation"><a href="food-photo.html"><span class="glyphicon glyphicon-camera"></span>Deco/Pretty</a></li>
+                  <li role="presentation"><a href="food-taste.html"><span class="glyphicon glyphicon-cutlery"></span>Taste</a></li>
+                  <li role="presentation" class="divider"></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -71,10 +72,11 @@
                   Outdoor
                   <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a href="out-hike.html"><span class="glyphicon glyphicon-tree-conifer"></span>Hike/Stroll</a></li>
-                  <li><a href="out-active.html"><span class="glyphicon glyphicon-flash"></span>Active</a></li>
-                  <li><a href="out-hard.html"><span class="glyphicon glyphicon-fire"></span>Hardcore</a></li>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="out-hike.html"><span class="glyphicon glyphicon-tree-conifer"></span>Hike/Stroll</a></li>
+                  <li role="presentation"><a href="out-active.html"><span class="glyphicon glyphicon-flash"></span>Active</a></li>
+                  <li role="presentation"><a href="out-hard.html"><span class="glyphicon glyphicon-fire"></span>Hardcore</a></li>
+                  <li role="presentation" class="divider"></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -84,15 +86,16 @@
                   Indoor
                   <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a href="ind-active.html"><span class="glyphicon glyphicon-apple"></span>Active</a></li>
-                  <li><a href="#in-class"><span class="glyphicon glyphicon-book"></span>Classes</a></li>
-                  <li><a href="#food-cook"><span class="glyphicon glyphicon-baby-formula"></span>Cooking</a></li>
-                  <li><a href="#in-others"><span class="glyphicon glyphicon-pushpin"></span>Others</a></li>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="ind-active.html"><span class="glyphicon glyphicon-apple"></span>Active</a></li>
+                  <li role="presentation"><a href="#in-class"><span class="glyphicon glyphicon-book"></span>Classes</a></li>
+                  <li role="presentation"><a href="#food-cook"><span class="glyphicon glyphicon-baby-formula"></span>Cooking</a></li>
+                  <li role="presentation"><a href="#in-others"><span class="glyphicon glyphicon-pushpin"></span>Others</a></li>
+                  <li role="presentation" class="divider"></li>
                 </ul>
               </li>
-              <li>
-                <a href="bleah.html">
+              <li class="dropdown">
+                <a href="bleah.html" class="dropdown-toggle" role="button">
                   <span class="glyphicon glyphicon-thumbs-down"></span>
                   <br class="hidden-xs">
                   Bleah
@@ -111,7 +114,7 @@
     <!--=============================================================================================================-->
       
     <div class="container" id="main-content">
-      <h2>Indoor (<span class="glyphicon glyphicon-house"></span>Active)</h2><!--<span class="glyphicon glyphicon-glass"></span>Scenic</h2>-->
+      <h2>Indoor (<span class="glyphicon glyphicon-home"></span>Active)</h2><!--<span class="glyphicon glyphicon-glass"></span>Scenic</h2>-->
 
       <!-- ACTIVE -->
       <!--........................................................................................-->
@@ -328,21 +331,24 @@
                   <span class="glyphicon glyphicon-thumbs-up"></span>
                   <!--|thumbs-up|heart-empty|question-sign|trash-->
                 </td></tr>
-                <tr><td>Remarks:</td><td>Old style cantonese restaurant.</td></tr>
+                <tr><td>Remarks:</td><td>The free open air events are not listed. They vary between lively and fun to boring.</td></tr>
                 <!--<tr><td>Go&nbsp;with:</td><td><ul>
                   <li>Bukit Timah Hill Hike</li>
                 </ul></td></tr>-->
               </table>
-              <p>18 Jun, Sat, 4pm &#09; Bhangra</p>
-              <p>18 Jun, Sun, 6pm &#09; Salsa Casino</p>
-              <p>05 Aug, Sat, 8pm &#09; Viennese Waltz (Date Night)</p>
-              <p>06 Aug, Sun, 6pm &#09; Salsa</p>
-              <p>27 Aug, Sun, 6pm &#09; Tango Blues</p>
-              <p>02 Sep, Sat, 6pm &#09; Paso Doble (Ballroom)</p>
-              <p>02 Sep, Sat, 8pm &#09; Rumba (Date Night)</p>
-              <p>03 Sep, Sun, 4pm &#09; Waltz</p>
-              <p>23 Sep, Sat, 4pm &#09; Paso Doble</p>
-              <p>23 Sep, Sat, 6pm &#09; Argentine Tango</p>
+              <ul class="pull-left">
+                <li>18 Jun, Sat, 4pm &#09; Bhangra</li>
+                <li>18 Jun, Sun, 6pm &#09; Salsa Casino</li>
+                <li>05 Aug, Sat, 8pm &#09; Viennese Waltz (Date Night)</li>
+                <li>06 Aug, Sun, 6pm &#09; Salsa</li>
+                <li>27 Aug, Sun, 6pm &#09; Tango Blues</li>
+                <li>02 Sep, Sat, 6pm &#09; Paso Doble (Ballroom)</li>
+                <li>02 Sep, Sat, 8pm &#09; Rumba (Date Night)</li>
+                <li>03 Sep, Sun, 4pm &#09; Waltz</li>
+                <li>23 Sep, Sat, 4pm &#09; Paso Doble</li>
+                <li>23 Sep, Sat, 6pm &#09; Argentine Tango</li>
+              </ul>
+              
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8074398418385!2d103.8536279147539!3d1.2897933990592745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a7ec1ae549%3A0xb955a5f90a365835!2sEsplanade+-+Theatres+on+the+Bay%2C+Singapore!5e0!3m2!1sen!2ssg!4v1496078718224" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div><!--/.panel-body-->
           </div><!--/.panel-collapse-->

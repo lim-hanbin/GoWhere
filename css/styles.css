@@ -54,16 +54,22 @@ h3 span {
 #nav-list {
   margin-top: 8px;
 }
-#nav-list > li > a {
-  color: #fff;
+#nav-list a {
   text-align: center;
 }
-#nav-list a:hover {
+#nav-list li.dropdown a.dropdown-toggle {
+  color: #fff;
+}
+#nav-list li.dropdown a.dropdown-toggle:hover {
   background: #E7E7E7;
   color: #000;
 }
-#nav-list a span { /* Glyphs */
-  font-size: 1.8em;
+#nav-list li.dropdown a.dropdown-toggle span { /* Glyphs */
+  font-size: 1.3em;
+}
+#nav-list li.dropdown ul.dropdown-menu a {
+  color: #000;
+  font-size: 1.2em;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
@@ -72,11 +78,21 @@ h3 span {
   clear: both;
   margin-top: -30px;
 }
-#collapsable-nav a { /* Collapsed nav menu glyphs and words */
-  font-size: 1.3em;
+#collapsable-nav li.dropdown a.dropdown-toggle { /* Collapsed nav menu glyphs and words */
+  font-size: 1.15em;
+  padding-bottom: 3px;
+}
+#collapsable-nav li.dropdown ul.dropdown-menu a {
+  color: #fff;
+}
+#collapsable-nav li.dropdown ul.dropdown-menu a:hover {
+  color: #000;
+}
+#collapsable-nav a:hover {
+  background: #E7E7E7;
 }
 #collapsable-nav a span { /* Collapsed nav glyphs */
-  font-size: 1.2em; /* To override 1.8em sizing of larger screen sizes */
+  font-size: 0.9em; /* To override 1.8em sizing of larger screen sizes */
   margin-right: 5px;
 }
 /* END Navbar */
@@ -88,14 +104,17 @@ h3 span {
   padding-top: 90px;
   padding-bottom: 30px;
 }
-#main-content h2 {
+h2 {
   font-size: 3.5em;
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
 }
-#main-content h2 > span {
- font-size: 0.8em;
- padding: 0 7px;
+h2 span {
+  font-size: 0.8em;
+  padding-right: 7px;
+}
+h3 span {
+  padding-right: 5px;
 }
 .jumbotron {
   background-color: #fff;
@@ -111,7 +130,7 @@ h3 span {
 }
 /* END Main-content */
 
-/*********************************** 2.1 Panel *************************************
+/*********************************** 2.1 Panels *************************************
 ========================================================================================*/
 h4.panel-title {
   font-weight: bold;
@@ -161,32 +180,6 @@ h4.panel-title {
 }
 /* END Footer */
 
-/*********************************** 2.3 Page-navbar *************************************
-========================================================================================*/
-#page-navbar {
-  margin: auto 20px;
-}
-#page-navbar li.cat{
-  border-left: 1px solid #231231;
-  font-size: 200%;
-}
-#page-navbar span{
-  color: #3F0C1F;
-  font-weight: bold;
-}
-#page-navbar li a {
-  /*border: 1px solid #231231;*/
-  color: #3F0C1F;
-  text-align: center;
-  padding: 5px 10px;
-  /*font-style: italic;*/
-}
-#page-navbar .active a {
-  background-color: #660000;
-  color: #f2f2f2;
-}
-/* END Page-navbar */
-
 /*=====================================================================================|
 |******************************* 3. SIZE DEPENDENT STYLES *****************************|
 |======================================================================================|*/
@@ -199,6 +192,8 @@ h4.panel-title {
 /***************************** 3.2 Medium devices only *********************************
 ========================================================================================*/
 @media (min-width: 992px) and (max-width: 1199px) {
+
+  /** Header *****************************************************/
   #header-nav {
     font-size: 80%;
   }
@@ -211,6 +206,14 @@ h4.panel-title {
   #main-content h3 {
     font-size: 1.9em;
   }
+  #nav-list {
+    margin-top: 8px;
+  }
+  #nav-list li.dropdown ul.dropdown-menu a span {
+    font-size: 0.9em;
+  }
+
+  /** Panels *****************************************************/
   .panel-heading {
     padding: 6px 10px;
   }
@@ -238,6 +241,8 @@ h4.panel-title {
 /***************************** 3.3 Small devices only **********************************
 ========================================================================================*/
 @media (min-width: 768px) and (max-width: 991px) {
+  
+  /** Header *****************************************************/
   #header-nav {
     font-size: 70%;
   }
@@ -261,6 +266,8 @@ h4.panel-title {
   #nav-list > li > a {
     padding: 10px;
   }
+  
+  /** Panels *****************************************************/
   .panel-heading {
     padding: 4px 6px;
   }
@@ -274,13 +281,6 @@ h4.panel-title {
   .panel-body {
     font-size: 1.2em;
   }
-  /*.panel-body table {
-    width: 45%;
-  }*/
-  /*.panel-body td:first-child + td { /* second column */ 
-    /*padding-left: 5px;
-    font-size: 1em;
-  }*/
   .panel-body img {
     height: 230px;
     padding: 5px;
@@ -325,12 +325,8 @@ h4.panel-title {
     margin-top: 5px;
     margin-bottom: 3px;
   }
-  /*#nav-list {
-    margin-top: 3px;
-  }
-  #nav-list > li > a {
-    padding: 10px;
-  }*/
+  
+  /** Panels *****************************************************/
   h4.panel-title {
     font-size: 1.15em;
     font-weight: normal;
@@ -344,10 +340,6 @@ h4.panel-title {
   .panel-body table {
     width: 50%;
   }
-  /*.panel-body td:first-child + td { /* second column */ 
-    /*padding-left: 5px;
-    font-size: 1em;
-  }*/
   .panel-body img {
     height: 200px;
     padding: 5px;
@@ -364,6 +356,7 @@ h4.panel-title {
 ========================================================================================*/
 @media (max-width: 479px) {
 
+  /** Header *****************************************************/
   #main-content {
     padding-top: 50px;
   }
@@ -374,54 +367,17 @@ h4.panel-title {
     font-size: 2em;
     margin-top: 2px;
   }
-  /*.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #fff;
-    /*color: #fff;
-  }
-  .navbar-header button.navbar-toggle {
-    /*clear: both;*/
-  /*  margin-top: -40px;
-  }
-  #main-content {
-    padding-top: 60px;
-  }
-    margin-top: 8px;
-    margin-bottom: 5px;
-  */
-  #main-content 
-  h2 {
+  #main-content h2 {
     font-size: 1.8em;
   }
-  /*
-  h3 {
-    /*font-size: 1.8em;
-    margin-top: 5px;
-    margin-bottom: 3px;
-  }
-  */
-  /*#nav-list {
-    margin-top: 3px;
-  }
-  #nav-list > li > a {
-    padding: 10px;
-  }
-  h4.panel-title {
-    font-size: 1.3em;
-    font-weight: normal;
-  }
-  .panel-heading {
-    padding: 4px 6px;
-  }*/
+  
+  /** Panels *****************************************************/
   .panel-body {
     font-size: 1.1em;
   }
   .panel-body table {
     width: 100%;
   }
-  /*.panel-body td:first-child + td { /* second column */ 
-    /*padding-left: 5px;
-    font-size: 1em;
-  }*/
   .panel-body img {
     width: 80vw;
     padding: 2px;
@@ -431,5 +387,4 @@ h4.panel-title {
     height: 200px;
     padding: 3px;
   }
-
 }
