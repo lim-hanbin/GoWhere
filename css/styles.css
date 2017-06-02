@@ -25,6 +25,7 @@ h3 span {
   margin-bottom: 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .navbar-brand h1 {
   font-size: 3.5em;
@@ -83,7 +84,7 @@ h3 span {
   padding-bottom: 3px;
 }
 #collapsable-nav li.dropdown ul.dropdown-menu a {
-  color: #fff;
+  color: #000;
 }
 #collapsable-nav li.dropdown ul.dropdown-menu a:hover {
   color: #000;
@@ -103,6 +104,7 @@ h3 span {
 #main-content {
   padding-top: 90px;
   padding-bottom: 30px;
+  height: 120vh;
 }
 h2 {
   font-size: 3.5em;
@@ -309,7 +311,6 @@ h4.panel-title {
     /*color: #fff;*/
   }
   .navbar-header button.navbar-toggle {
-    /*clear: both;*/
     margin-top: -40px;
   }
   #main-content {
@@ -325,6 +326,11 @@ h4.panel-title {
     margin-top: 5px;
     margin-bottom: 3px;
   }
+  #collapsable-nav li.dropdown ul.dropdown-menu a {
+    color: #000;
+    color: #fff;
+  }
+
   
   /** Panels *****************************************************/
   h4.panel-title {
