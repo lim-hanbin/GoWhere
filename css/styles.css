@@ -9,9 +9,9 @@ body {
 |======================================================================================|*/
 #header-nav {
   background-color: #003399;
+  box-shadow: 0 0 10px #003399;
   border-radius: 0;
   border: 0;
-  box-shadow: 0 0 10px #003399;
   margin-bottom: 0;
   position: fixed;
   width: 100%;
@@ -21,7 +21,7 @@ body {
   font-size: 3.5em;
   font-weight: bold;
   font-family: 'Qwigley', cursive;
-  margin: 8px auto 0;
+  margin-top: 2px;
   line-height: .75;
   color: #fff;
   text-shadow: 1px 1.5px 1px #ff66d9;
@@ -41,10 +41,10 @@ body {
   text-align: center;
   margin: 8px auto;
 }
-#nav-list a { /* Primary nav menu */
+#nav-list a.dropdown-toggle { /* Primary nav menu */
   color: #fff;
 }
-#nav-list a:hover {
+#nav-list a.dropdown-toggle:hover {
   background: #E7E7E7;
   color: #000;
 }
@@ -237,7 +237,7 @@ h4.panel-title {
   }
   .navbar-brand h1 {
     font-size: 2.1em;
-    margin-top: 7px;
+    margin-top: 2px;
   }
   h2 {
     font-size: 2.5em;
@@ -250,10 +250,14 @@ h4.panel-title {
     margin-bottom: 5px;
   }
   #nav-list {
-    margin-top: 3px;
+    margin-top: 5px;
+    margin-bottom: 2px
   }
   #nav-list > li > a {
     padding: 10px;
+  }
+  #collapsable-nav a.dropdown-toggle { /* Collapsed nav menu glyphs and words */
+    font-size: 1.3em;
   }
   
   /** Panels *****************************************************/
@@ -287,8 +291,8 @@ h4.panel-title {
   
   /** Header *****************************************************/
   .navbar-brand h1 {
-    font-size: 1.8em;
-    margin-top: 3px;
+    font-size: 2em;
+    margin-top: 2px;
   }
   .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 1px solid #fff;
