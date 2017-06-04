@@ -3,16 +3,6 @@ body {
   background-color: #fff;
   font-family: "Open+Sans", sans-serif;
 }
-/*h3 {
-  font-family: "Hammersmith One", cursive;
-  font-size: 3em;
-  /*border-bottom: 1px solid #000; */
-/*}
-h3 span {
- font-size: 0.8em;
- padding-right: 8px;
- padding-top: 8px;
-}
 
 /*=====================================================================================|
 |************************************** 1. HEADER *************************************|
@@ -31,18 +21,13 @@ h3 span {
   font-size: 3.5em;
   font-weight: bold;
   font-family: 'Qwigley', cursive;
-  margin-top: 8px;
-  margin-bottom: 0;
+  margin: 8px auto 0;
   line-height: .75;
   color: #fff;
-  text-shadow: 1px 1px 1px #222;
-  text-shadow: 1px 1px #ff0066;
-  text-shadow: 1px 1px #cc0066;
   text-shadow: 1px 1.5px 1px #ff66d9;
 }
 .navbar-brand h1 span {
   color: #ff66d9;
-  text-shadow: 1px 1px #cc0066;
   text-shadow: 0.5px 0.5px #fff;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -53,22 +38,20 @@ h3 span {
 /************************************* 1.1 Navbar **************************************
 ========================================================================================*/
 #nav-list {
-  margin-top: 8px;
-}
-#nav-list a {
   text-align: center;
+  margin: 8px auto;
 }
-#nav-list li.dropdown a.dropdown-toggle {
+#nav-list a { /* Primary nav menu */
   color: #fff;
 }
-#nav-list li.dropdown a.dropdown-toggle:hover {
+#nav-list a:hover {
   background: #E7E7E7;
   color: #000;
 }
-#nav-list li.dropdown a.dropdown-toggle span { /* Glyphs */
+#nav-list a.dropdown-toggle span { /* Glyphs */
   font-size: 1.3em;
 }
-#nav-list li.dropdown ul.dropdown-menu a {
+#nav-list li ul { /* Secondary nav menu */
   color: #000;
   font-size: 1.2em;
 }
@@ -79,21 +62,23 @@ h3 span {
   clear: both;
   margin-top: -30px;
 }
-#collapsable-nav li.dropdown a.dropdown-toggle { /* Collapsed nav menu glyphs and words */
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: #003399;
+  font-style: underline;
+}
+#collapsable-nav a.dropdown-toggle { /* Collapsed nav menu glyphs and words */
   font-size: 1.15em;
-  padding-bottom: 3px;
+  padding: 3px;
 }
-#collapsable-nav li.dropdown ul.dropdown-menu a {
-  color: #000;
+#collapsable-nav li ul { /* Collapsed nav menu glyphs and words */
+  text-align: center;
 }
-#collapsable-nav li.dropdown ul.dropdown-menu a:hover {
-  color: #000;
-}
-#collapsable-nav a:hover {
-  background: #E7E7E7;
+#collapsable-nav li ul a { /* Collapsed nav menu glyphs and words */
+  padding: 2px 5px;
+  font-size: 0.92em;
 }
 #collapsable-nav a span { /* Collapsed nav glyphs */
-  font-size: 0.9em; /* To override 1.8em sizing of larger screen sizes */
+  font-size: 0.8em; /* To override sizing of larger screen sizes */
   margin-right: 5px;
 }
 /* END Navbar */
@@ -104,23 +89,23 @@ h3 span {
 #main-content {
   padding-top: 90px;
   padding-bottom: 30px;
-  height: 120vh;
+  z-index: -1;
 }
 h2 {
   font-size: 3.5em;
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
 }
-h2 span {
+h2 span { /* Glyphs */
   font-size: 0.8em;
   padding-right: 7px;
 }
-h3 span {
+h3 span { /* Glyphs */
   padding-right: 5px;
 }
 .jumbotron {
   background-color: #fff;
-  height: 100vh;
+  min-height: 100%;
   padding: 20px;
   margin: 0;
 }
@@ -141,7 +126,6 @@ h4.panel-title {
 .panel-body {
   font-family: "Open+Sans", sans-serif;
   font-size: 1.5em;
-  /*padding-bottom: 80px;*/
 }
 .panel-body table {
   float: left;
@@ -174,11 +158,14 @@ h4.panel-title {
 /************************************* 2.2 Footer **************************************
 ========================================================================================*/
 .panel-footer {
-  padding-top: 35px;
-  padding-bottom: 30px;
   background-color: #222;
   border-top: 0;
   color: #fff;
+  position:absolute;
+  width:100%;
+  bottom: 0;
+  height:60px;
+  z-index: -1;
 }
 /* END Footer */
 
@@ -202,16 +189,16 @@ h4.panel-title {
   .navbar-brand h1 {
     font-size: 2.8em;
   }
-  #main-content h2 {
+  h2 {
     font-size: 3em;
   }
-  #main-content h3 {
+  h3 {
     font-size: 1.9em;
   }
   #nav-list {
     margin-top: 8px;
   }
-  #nav-list li.dropdown ul.dropdown-menu a span {
+  #nav-list li ul a span {
     font-size: 0.9em;
   }
 
@@ -252,12 +239,12 @@ h4.panel-title {
     font-size: 2.1em;
     margin-top: 7px;
   }
-  #main-content h2 {
+  h2 {
     font-size: 2.5em;
     margin-top: 0px;
     margin-bottom: 8px;
   }
-  #main-content h3 {
+  h3 {
     font-size: 1.7em;
     margin-top: 8px;
     margin-bottom: 5px;
@@ -299,16 +286,12 @@ h4.panel-title {
 @media (max-width: 767px) {
   
   /** Header *****************************************************/
-  #header-nav {
-    /*font-size: 50%;*/
-  }
   .navbar-brand h1 {
     font-size: 1.8em;
     margin-top: 3px;
   }
   .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 1px solid #fff;
-    /*color: #fff;*/
   }
   .navbar-header button.navbar-toggle {
     margin-top: -40px;
@@ -316,21 +299,20 @@ h4.panel-title {
   #main-content {
     padding-top: 60px;
   }
-  #main-content h2 {
+  h2 {
     font-size: 2em;
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  #main-content h3 {
+  h3 {
     font-size: 1.4em;
     margin-top: 5px;
     margin-bottom: 3px;
   }
-  #collapsable-nav li.dropdown ul.dropdown-menu a {
+  #collapsable-nav li ul a {
     color: #000;
     color: #fff;
   }
-
   
   /** Panels *****************************************************/
   h4.panel-title {
@@ -366,14 +348,11 @@ h4.panel-title {
   #main-content {
     padding-top: 50px;
   }
-  #header-nav {
-    /*font-size: 50%;*/
-  }
   .navbar-brand h1 {
     font-size: 2em;
     margin-top: 2px;
   }
-  #main-content h2 {
+  h2 {
     font-size: 1.8em;
   }
   
@@ -386,10 +365,11 @@ h4.panel-title {
   }
   .panel-body img {
     width: 80vw;
+    height: auto;
     padding: 2px;
   }
   .panel-body iframe {
-    width: 200px; 
+    width: 80vw;
     height: 200px;
     padding: 3px;
   }
