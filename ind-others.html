@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HanBinGoWhere</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Boogaloo|Acme|Fjalla+One|Open+Sans|Marck+Script|Qwigley" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--=============================================================================================================-->
+    <!-- HEADER SECTION -->
+    <!--=============================================================================================================-->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <!-- NAVBAR -->
+          <!--........................................................................................-->
+          <div class="navbar-header">
+
+            <!-- ==================== Brand ==================== -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>HanBin<span>GoWhere</span></h1>
+              </a>
+            </div><!--/navbar-brand-->
+            
+            <!-- ==================== Collapsable Navigator ==================== -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!--The navigator's 3 stripes-->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div><!--/.navbar-header-->
+
+          <!-- NAVBAR CONTENTS -->
+          <!--........................................................................................-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-cutlery"></span>
+                  <br class="hidden-xs">
+                  Food
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="food-env.html"><span class="glyphicon glyphicon-picture"></span>Environment</a></li>
+                  <li role="presentation"><a href="food-photo.html"><span class="glyphicon glyphicon-camera"></span>Deco/Pretty</a></li>
+                  <li role="presentation"><a href="food-taste.html"><span class="glyphicon glyphicon-cutlery"></span>Taste</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="sobre.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <!--<span class="glyphicon glyphicon-tree-deciduous"></span>-->
+                  <span class="glyphicon glyphicon-tent"></span>
+                  <br class="hidden-xs">
+                  Outdoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="out-hike.html"><span class="glyphicon glyphicon-tree-conifer"></span>Hike/Stroll</a></li>
+                  <li role="presentation"><a href="out-active.html"><span class="glyphicon glyphicon-flash"></span>Active</a></li>
+                  <li role="presentation"><a href="out-hard.html"><span class="glyphicon glyphicon-fire"></span>Hardcore</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="horarios.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="glyphicon glyphicon-home"></span>
+                  <br class="hidden-xs">
+                  Indoor
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation"><a href="ind-active.html"><span class="glyphicon glyphicon-apple"></span>Active</a></li>
+                  <!--<li role="presentation"><a href="#in-class"><span class="glyphicon glyphicon-book"></span>Classes</a></li>
+                  <li role="presentation"><a href="#food-cook"><span class="glyphicon glyphicon-baby-formula"></span>Cooking</a></li>-->
+                  <li role="presentation"><a href="ind-others.html"><span class="glyphicon glyphicon-pushpin"></span>Others</a></li>
+                  <li role="presentation" class="divider visible-xs"></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="bleah.html" class="dropdown-toggle" role="button">
+                  <span class="glyphicon glyphicon-thumbs-down"></span>
+                  <br class="hidden-xs">
+                  Bleah
+                </a>
+              </li>
+              
+            </ul><!--/#nav-list-->
+          </div><!--/.navbar-collapse-->
+
+        </div><!--/.container-->
+      </nav><!--/#header-nav-->
+    </header><!--/HEADER SECTION-->
+
+    <!--=============================================================================================================-->
+    <!-- BULK SECTION -->
+    <!--=============================================================================================================-->
+      
+    <main class="container" id="main-content">
+      <h2>Indoor (<span class="glyphicon glyphicon-pushpin"></span>Others)</h2>
+
+      <!-- ACTIVE -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-gift"></span>Gifts</h3>
+      <div class="panel-group" id="ind-oth-gifts" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="flowers-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#ind-oth-gifts" href="#flowers" aria-controls="flowers" aria-expanded="true">
+                The Flower Factory SG
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="flowers" class="panel-collapse collapse" role="tabpanel" aria-labelledby="flowers-head">
+            <div class="panel-body">
+              <p><a href="http://theflowerfactory.com.sg/index.php?route=common/home">The Flower Factory SG website</a></p>
+              <p>Address: 11 Woodlands Close, #01-01 , Woodlands 11, Singapore 737853</p>
+              <table>
+                <tr><td>Type:</td><td>Flowers Delivery</td></tr>
+                <tr><td>Tags:</td><td>Cheap, Seasonal Shop</td></tr>
+                <!--<tr><td>Good&nbsp;on:</td><td>-</td></tr>-->
+                <tr><td>Price:</td><td>$58+$12 (for delivery), on V-day</td></tr>
+                <tr><td>Area:</td><td>North</td></tr>
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Can't check delivery. Gets the job done. Bouquets are quite nice too. Sometimes they forget to update their website so it might be cheaper there than at the physical store.</td></tr>
+              </table>
+              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/18424217_1488704561190130_7835882962823408171_n.jpg?oh=a41613ea95bf3833aa4267c5c52b14b6&oe=59CA8938">
+              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/16830638_1407596545967599_8762657515561663223_n.jpg?oh=0226e5d17ee548b543673b765ef0efa8&oe=59D94E42">
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="climb-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#ind-oth-gifts" href="#climb" aria-controls="climb" aria-expanded="true">
+                Polymer Clay Accessories @ Ting Corner
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="climb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="climb-head">
+            <div class="panel-body">
+              <p>Polymer Clay Accessories: <a href="https://www.facebook.com/tingcorner/">Ting Corner Facebook page</a></p>
+              <table>
+                <tr><td>Type:</td><td>Trinkets</td></tr>
+                <tr><td>Tags:</td><td>Cute, Mini-Food</td></tr>
+                <!--<tr><td>Good&nbsp;on:</td><td>-</td></tr>-->
+                <tr><td>Price:</td><td>$20-$50</td></tr>
+                <!--<tr><td>Area:</td><td>-</td></tr>-->
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>-</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t45.5328-0/c0.0.540.540/p180x540/17616796_1607447342628743_7992847293617274880_n.jpg?oh=6b4c91673f82dcd6ce6632b22e999c04&oe=59D8D263">
+              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t45.5328-0/c0.0.540.540/p180x540/13718254_855543651212870_1048838210_n.jpg?oh=6fe87685e55ac20fbcaa3e57d629a584&oe=59E30959">
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="climb-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#ind-oth-gifts" href="#climb" aria-controls="climb" aria-expanded="true">
+                Giant Macaron Cakes @ Macarons SG
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="climb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="climb-head">
+            <div class="panel-body">
+              <p><a href="http://macarons.sg/giant-macaron-cakes/">Website</a></p>
+              <table>
+                <tr><td>Type:</td><td>Trinkets</td></tr>
+                <tr><td>Tags:</td><td>Cute, Mini-Food</td></tr>
+                <!--<tr><td>Good&nbsp;on:</td><td>-</td></tr>-->
+                <tr><td>Price:</td><td>$45+$25 (for delivery)</td></tr>
+                <!--<tr><td>Area:</td><td>-</td></tr>-->
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Order at least 7 days in advance. Can customise with words.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <img src="http://macarons.sg/wp-content/uploads/2015/04/Strawberry-Chocolate-300x300.jpg">
+              <img src="http://macarons.sg/wp-content/uploads/2015/04/Mango-Peach.jpg">
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#ind-oth-gifts-->
+
+      <!-- CLASSES -->
+      <!--........................................................................................-->
+      <h3><span class="glyphicon glyphicon-grain"></span>Cooking</h3>
+      <div class="panel-group" id="ind-oth-cook" role="tablist" aria-multiselectable="true">
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="steak-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#ind-oth-cook" href="#steak" aria-controls="steak" aria-expanded="true">
+                Steak 3-course
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="steak" class="panel-collapse collapse" role="tabpanel" aria-labelledby="steak-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Cook</td></tr>
+                <tr><td>Tags:</td><td>3-course</td></tr>
+                <!--<tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>-->
+                <tr><td>Price:</td><td>~$20/pax</td></tr>
+                <!--<tr><td>Area:</td><td>Lower North</td></tr>-->
+                <tr><td>Return:</td><td>
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Need to schedule each dish's cooking to multi-task and keep the food warm.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+              <p>
+                Sous vide steak. With sides:
+                <ul>
+                  <li>Roast caramelised potatoes</li>
+                  <li>Portobello mushrooms with poached egg</li>
+                  <li>Stir-fried brussels sprouts with a dash of lemon</li>
+                  <li>Paella seafood rice</li>
+                </ul>
+              </p>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+        
+        <!-- ================================================================================ -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="french-head">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#ind-oth-cook" href="#french" aria-controls="french" aria-expanded="true">
+                French Style
+              </a>
+            </h4><!--/.panel-title-->
+          </div><!--/.panel-heading-->
+          <div id="french" class="panel-collapse collapse" role="tabpanel" aria-labelledby="french-head">
+            <div class="panel-body">
+              <table>
+                <tr><td>Type:</td><td>Cook</td></tr>
+                <tr><td>Tags:</td><td>-</td></tr>
+                <!--<tr><td>Good&nbsp;on:</td><td>All weather and times</td></tr>-->
+                <tr><td>Price:</td><td>???</td></tr>
+                <!--<tr><td>Area:</td><td>Town</td></tr>-->
+                <tr><td>Return:</td><td>
+                  <!--<span class="glyphicon glyphicon-question-sign">-->
+                  <!--|thumbs-up|heart-empty|question-sign|trash-->
+                </td></tr>
+                <tr><td>Remarks:</td><td>Not repeatable yet.</td></tr>
+                <!--<tr><td>Go&nbsp;with:</td><td><ul>
+                  <li>Bukit Timah Hill Hike</li>
+                </ul></td></tr>-->
+              </table>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-->
+      </div><!--/.panel-group#ind-oth-cook-->
+
+    </main><!--/#main-content-->
+      
+    <!-- FOOTER SECTION -->
+    <!--........................................................................................-->
+    <footer class="panel-footer">
+      <div class="container">
+        
+        <!-- ==================== Footer Navbar ==================== -->
+        
+        <!-- ==================== Footer Copyright ==================== -->
+        <div id ="footer-copyright" class="text-center">
+          <!--Copyright &copy;--> HanBin<i>GoWhere</i> 2017
+          <p><i>All pictures do not belong to me.</i></p>
+        </div>
+
+      </div><!--/.container-->
+    </footer><!--/.panel-footer-->
+
+    <script src="js/pw.js"></script>
+  </body>
+</html>
